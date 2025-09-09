@@ -1,7 +1,16 @@
 body {
   font-family: var(--font-body);
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: var(--font-heading);
+}
+
+@mixin glowing-text {
+  -webkit-box-shadow: 0px 0px 105px 45px rgba(206, 107, 255, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(206, 107, 255, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(206, 107, 255, 0.9);
+  color: var(--white);
 }

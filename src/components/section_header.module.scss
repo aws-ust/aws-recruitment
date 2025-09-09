@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header {
+  font-size: 91px;
+  text-shadow: rgba(245, 119, 252, 0.9) 0px 0px 101px;
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 48px;
+  }
+}
+
+.subtitle {
+  font-size: 24px;
+  color: var(--white);
+}
