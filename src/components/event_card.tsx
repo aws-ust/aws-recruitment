@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./event_card.module.scss"; // or "./committees_box.module.scss"
+import styles from "./event_card.module.scss";
 
 interface EventCardProps {
   title: string;
