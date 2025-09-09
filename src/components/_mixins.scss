@@ -3,3 +3,8 @@
     0 0 32px rgba(206, 107, 255, 0.5), 0 0 64px rgba(206, 107, 255, 0.3);
   color: var(--white);
 }
+
+@mixin box-glow {
+  box-shadow: 0 0 16px rgba(206, 107, 255, 0.7),
+    0 0 32px rgba(206, 107, 255, 0.5), 0 0 64px rgba(206, 107, 255, 0.3);
+}
