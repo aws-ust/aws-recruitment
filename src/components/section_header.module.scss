@@ -7,7 +7,8 @@
   text-align: center;
 }
 .header {
-  font-size: 91px;
+  font-size: 110px;
+  margin-bottom: 10px;
   @include mixins.text-glow;
 }
 
