@@ -1,3 +1,5 @@
+@use "./mixins";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,8 +8,7 @@
 }
 .header {
   font-size: 91px;
-  text-shadow: rgba(245, 119, 252, 0.9) 0px 0px 101px;
-  color: var(--white);
+  @include mixins.text-glow;
 }
 
 @media (max-width: 1024px) {

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import { Outfit } from "next/font/google";
 import localFont from "next/font/local";
 
-const agrandir = localFont({
-  src: "../../public/fonts/Agrandir-Regular.otf",
+const outfit = Outfit({
+  subsets: ["latin"],
   variable: "--font-body",
 });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${agrandir.variable} ${tanHeadline.variable}`}>
+      <body className={`${outfit.variable} ${tanHeadline.variable}`}>
         {children}
       </body>
     </html>
