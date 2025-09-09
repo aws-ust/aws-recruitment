@@ -1,0 +1,32 @@
+@use "./mixins";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+@mixin text {
+  font-family: var(--font-body);
+  margin: 0 1rem;
+  @include mixins.text-glow;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.right {
+  text-align: right;
+  @include text;
+}
+
+.left {
+  text-align: left;
+  @include text;
+}
