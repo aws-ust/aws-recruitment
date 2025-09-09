@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./committees_box.module.scss";
 
 interface CommitteeBoxProps {
@@ -15,7 +16,13 @@ export const CommitteeBox: React.FC<CommitteeBoxProps> = ({
   index,
 }) => (
   <div className={index % 2 !== 0 ? styles.odd : styles.even}>
-    <img src={image} alt={title} className={styles.image} />
+    <Image
+      src={image}
+      alt={title}
+      className={styles.image}
+      width={80}
+      height={80}
+    />
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.description}>{description}</p>
   </div>
