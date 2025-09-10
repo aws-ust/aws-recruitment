@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import { Outfit } from "next/font/google";
 import localFont from "next/font/local";
+import { DesktopNav } from "../components/desktop_nav";
+import { navLinks } from "../utils/data";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -26,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.variable} ${tanHeadline.variable}`}>
+        <DesktopNav links={navLinks} />
         {children}
       </body>
     </html>

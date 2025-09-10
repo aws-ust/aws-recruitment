@@ -24,7 +24,7 @@ export const ExecutiveBoardBox: React.FC<ExecutiveBoxProps> = ({
       />
     </div>
     <div className={styles.info}>
-      <div className={styles.name}>{name}</div>
+      <div className={styles.name}>{name.toUpperCase()}</div>
       <div className={styles.position}>{position}</div>
     </div>
   </div>

@@ -15,3 +15,8 @@ export type EventType = {
   description: string;
   image: string;
 };
+
+export type Link = {
+  name: string;
+  link: string;
+};

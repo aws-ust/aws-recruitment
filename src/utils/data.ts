@@ -1,4 +1,4 @@
-import { MemberType, CommitteeType, EventType } from "./types";
+import { MemberType, CommitteeType, EventType, Link } from "./types";
 
 export const executiveBoardData: MemberType[] = [
   { name: "Usagi", position: "President", image: "/aws-mascot.png" },
@@ -129,4 +129,11 @@ export const eventsData: EventType[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
   },
+];
+
+export const navLinks: Link[] = [
+  { name: "HOME", link: "/" },
+  { name: "ABOUT", link: "/about" },
+  { name: "OUR TEAM", link: "/team" },
+  { name: "EVENTS", link: "/events" },
 ];

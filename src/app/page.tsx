@@ -19,16 +19,16 @@ export default function Home() {
             />
           ))}
         </div>
+        <Committees committees={committeesData} />
+        <ExecutiveBoard members={executiveBoardData} />
+        <Aside
+          title="About Us"
+          description="Learn more about our mission and values."
+          isTextLeft={true}
+        >
+          <div className={styles.asideContent}></div>
+        </Aside>
       </Section>
-      <Committees committees={committeesData} />
-      <ExecutiveBoard members={executiveBoardData} />
-      <Aside
-        title="About Us"
-        description="Learn more about our mission and values."
-        isTextLeft={true}
-      >
-        <div className={styles.asideContent}></div>
-      </Aside>
     </div>
   );
 }
