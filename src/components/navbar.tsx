@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import styles from "./desktop_nav.module.scss";
+import styles from "./navbar.module.scss";
 import { Link } from "@/utils/types";
 
-interface DesktopNavProps {
+interface NavbarProps {
   links: Link[];
 }
 
-export const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
+export const Navbar: React.FC<NavbarProps> = ({ links }) => {
   const [atTop, setAtTop] = useState(true);
 
   useEffect(() => {

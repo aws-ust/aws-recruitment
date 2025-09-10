@@ -9,6 +9,7 @@
 .header {
   font-size: 110px;
   margin-bottom: 10px;
+  pointer-events: none;
   @include mixins.text-glow;
 }
 
