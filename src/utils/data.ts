@@ -1,8 +1,4 @@
-export type MemberType = {
-  name: string;
-  position: string;
-  image: string;
-};
+import { MemberType, CommitteeType, EventType } from "./types";
 
 export const executiveBoardData: MemberType[] = [
   { name: "Usagi", position: "President", image: "/aws-mascot.png" },
@@ -14,17 +10,6 @@ export const executiveBoardData: MemberType[] = [
   { name: "Hachiware", position: "Secretary", image: "/aws-mascot.png" },
   { name: "Rakko", position: "Treasurer", image: "/aws-mascot.png" },
 ];
-export type CommitteeType = {
-  title: string;
-  description: string;
-  image: string;
-};
-
-export type EventType = {
-  title: string;
-  description: string;
-  image: string;
-};
 
 export const committeesData: CommitteeType[] = [
   {

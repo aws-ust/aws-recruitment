@@ -3,8 +3,8 @@ import { Aside } from "@/components/aside";
 import styles from "./page.module.scss";
 import { Committees } from "@/components/commitees/committees";
 import { EventCard } from "@/components/event_card";
-import { committeesData, eventsData } from "./data";
-
+import { committeesData, eventsData, executiveBoardData } from "../utils/data";
+import { ExecutiveBoard } from "@/components/eb/executive_board";
 export default function Home() {
   return (
     <div className={styles.body}>
@@ -19,11 +19,13 @@ export default function Home() {
             />
           ))}
         </div>
-        <Committees committees={committeesData} />
       </Section>
+      <Committees committees={committeesData} />
+      <ExecutiveBoard members={executiveBoardData} />
       <Aside
         title="About Us"
         description="Learn more about our mission and values."
+        isTextLeft={true}
       >
         <div className={styles.asideContent}></div>
       </Aside>

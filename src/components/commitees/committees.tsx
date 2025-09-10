@@ -1,13 +1,8 @@
 import React from "react";
 import styles from "./committees.module.scss";
 import { CommitteeBox } from "./committees_box";
+import { CommitteeType } from "../../utils/types";
 import { LineHeader } from "../line_header";
-
-export type CommitteeType = {
-  title: string;
-  description: string;
-  image: string;
-};
 
 interface CommitteesProps {
   committees: CommitteeType[];
