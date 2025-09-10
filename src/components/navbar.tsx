@@ -20,12 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
   }, []);
 
   return (
-    <nav
-      className={styles.navbar}
-      style={{
-        background: atTop ? "transparent" : "var(--purple-500)",
-      }}
-    >
+    <nav className={`${styles.navbar} ${!atTop ? styles.scrolled : ""}`}>
       <div className={styles.inner}>
         <h1 className={styles.logo}>AWSLC-UST</h1>
         <ul className={styles.links}>

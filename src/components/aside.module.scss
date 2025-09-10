@@ -18,10 +18,20 @@
   padding: 1rem;
 }
 
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .title {
   font-size: 72px;
-  margin-bottom: 1rem;
   @include mixins.text-glow;
+}
+.subtitle {
+  margin-top: -1rem;
 }
 
 .description {

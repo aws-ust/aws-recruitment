@@ -4,11 +4,15 @@
   left: 0;
   width: 100vw;
   z-index: 100;
-  transition: background 0.3s ease;
-  height: 70px;
+  transition: background-color 0.3s ease;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.scrolled {
+  background-color: var(--purple-500);
 }
 
 .inner {

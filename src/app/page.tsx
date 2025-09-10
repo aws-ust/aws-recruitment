@@ -24,6 +24,7 @@ export default function Home() {
         <Aside
           title="About Us"
           description="Learn more about our mission and values."
+          subtitle="Subtitle Here"
           isTextLeft={true}
         >
           <div className={styles.asideContent}></div>
