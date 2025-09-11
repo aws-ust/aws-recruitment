@@ -1,0 +1,17 @@
+.button {
+  background: var(--pink-400);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.button:hover {
+  background: #7c2a7b;
+  color: #fff;
+}
