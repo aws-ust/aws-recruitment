@@ -14,7 +14,7 @@
 
 .header {
   font-size: 72px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   pointer-events: none;
   @include mixins.text-glow;
 }
@@ -23,16 +23,23 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 150%;
-  height: 150%;
   z-index: 0;
   pointer-events: none;
   filter: brightness(0.5);
 }
 
+.subtitle {
+  font-size: 18px;
+  color: var(--white);
+  max-width: 900px;
+}
+
 @media (max-width: 1024px) {
   .header {
     font-size: 64px;
+  }
+  .subtitle {
+    font-size: 16px;
   }
 }
 
@@ -40,10 +47,7 @@
   .header {
     font-size: 48px;
   }
-}
-
-.subtitle {
-  font-size: 18px;
-  color: var(--white);
-  max-width: 900px;
+  .subtitle {
+    font-size: 14px;
+  }
 }

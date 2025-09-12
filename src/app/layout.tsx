@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.variable} ${tanHeadline.variable}`}>
         <Navbar links={navLinks} />
-        {children}
+        <main className="main">{children}</main>
         <Footer links={navLinks} />
       </body>
     </html>
