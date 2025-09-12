@@ -1,0 +1,51 @@
+@mixin box-glow {
+  // todo: improve glow
+  filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.6));
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.whatWeDoContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  width: 200px;
+  height: 200px;
+}
+
+.gridItem {
+  background: var(--purple-200);
+  border-radius: 12px;
+  border: 2px solid var(--purple-400);
+}
+
+.boxGlow {
+  @include box-glow;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .grid {
+    width: 150px;
+    height: 150px;
+  }
+}

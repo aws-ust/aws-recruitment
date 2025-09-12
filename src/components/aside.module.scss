@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 2rem;
   color: var(--white);
+  max-width: calc(var(--max-page-width) - 300px);
 }
 
 .text {
