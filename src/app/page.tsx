@@ -1,5 +1,6 @@
 "use client";
 import { Section } from "@/components/section";
+import { EventsSection } from "@/components/sections/events";
 import { Aside } from "@/components/aside";
 import styles from "./page.module.scss";
 import { Committees } from "@/components/commitees/committees";
@@ -11,31 +12,7 @@ import { Button } from "@/components/button";
 export default function Home() {
   return (
     <div className={styles.body}>
-      <Section title="Events" description="We are glad to have you here.">
-        <div className={styles.eventsGrid}>
-          {eventsData.map((event, idx) => (
-            <EventCard
-              key={event.title + idx}
-              title={event.title}
-              image={event.image}
-              description={event.description}
-            />
-          ))}
-        </div>
-        <RocketDiv />
-        <Committees committees={committeesData} />
-        <RocketDiv isRight />
-        <ExecutiveBoard members={executiveBoardData} />
-        <Aside
-          title="About Us"
-          description="Learn more about our mission and values."
-          subtitle="Subtitle Here"
-          isTextLeft={true}
-        >
-          <div className={styles.asideContent}></div>
-        </Aside>
-        <Button text="Join Us" onClick={() => {}} />
-      </Section>
+      <EventsSection />
     </div>
   );
 }
