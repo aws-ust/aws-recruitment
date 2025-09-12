@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./section_header.module.scss";
 
 interface SectionHeaderProps {
@@ -11,7 +12,16 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   subtitle,
 }) => (
   <header className={styles.container}>
-    <h1 className={styles.header}>{title}</h1>
-    {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+    <Image
+      src="/bg-space.svg"
+      alt="Background Space"
+      className={styles.bgSpace}
+      fill
+      aria-hidden="true"
+    />
+    <div className={styles.content}>
+      <h1 className={styles.header}>{title}</h1>
+      {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+    </div>
   </header>
 );

@@ -15,12 +15,15 @@
   --purple-900: #040224;
   --pink-400: #c34dbe;
   --white: #fff;
+
+  --event_grid_cols: 3;
+  --event_grid_gap: 1rem;
+
+  --max-page-width: 1200px;
 }
 
 body {
   font-family: var(--font-body);
-  --event_grid_cols: 3;
-  --event_grid_gap: 1rem;
 }
 
 @media (max-width: 900px) {

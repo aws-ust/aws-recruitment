@@ -3,10 +3,14 @@ import styles from "./events.module.scss";
 import { eventsData } from "@/utils/data";
 import { EventCard } from "@/components/event_card";
 import { Button } from "@/components/button";
-import { Section } from "../section";
+import { SectionHeader } from "../section_header";
 
 export const EventsSection: React.FC = () => (
-  <Section title="Events" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus." hasDivider={false}>
+  <section className={styles.section}>
+    <SectionHeader
+      title="Events"
+      subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
+    />
     <div className={styles.eventsGrid}>
       {eventsData.map((event, idx) => (
         <EventCard
@@ -18,7 +22,7 @@ export const EventsSection: React.FC = () => (
       ))}
     </div>
     <div className={styles.buttonWrapper}>
-      <Button text="Load More" onClick={() => { }} />
+      <Button text="Load More" onClick={() => {}} />
     </div>
-  </Section>
+  </section>
 );

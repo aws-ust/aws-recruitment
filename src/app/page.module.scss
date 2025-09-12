@@ -2,16 +2,3 @@ body {
   background: linear-gradient(180deg, var(--purple-600), var(--purple-900));
   margin: 0 auto;
 }
-
-.asideContent {
-  height: 500px;
-  background-color: red;
-}
-
-.eventsGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
