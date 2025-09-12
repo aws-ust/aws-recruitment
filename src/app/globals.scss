@@ -4,8 +4,35 @@
   box-sizing: border-box;
 }
 
+:root {
+  --purple-100: #c595cb;
+  --purple-200: #d7cbff;
+  --purple-300: #5b3d9f;
+  --purple-400: #684ad1;
+  --purple-500: #3e2977;
+  --purple-600: #0d0850;
+  --purple-800: #1d1347;
+  --purple-900: #040224;
+  --pink-400: #c34dbe;
+  --white: #fff;
+}
+
 body {
   font-family: var(--font-body);
+  --event_grid_cols: 3;
+  --event_grid_gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    --event_grid_cols: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    --event_grid_cols: 1;
+  }
 }
 
 h1 {
