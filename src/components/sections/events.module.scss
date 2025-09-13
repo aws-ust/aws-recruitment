@@ -40,11 +40,17 @@ $gap: 1rem;
   max-width: calc(var(--max-page-width) - 200px);
   gap: $gap;
   margin: 3rem 0;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .buttonWrapper {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .eventsWrapper {
+    padding: 0 2rem;
+  }
 }
