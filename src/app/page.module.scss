@@ -1,0 +1,23 @@
+.mascotLinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .mascotLinksContainer {
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mascotLinksContainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+}
