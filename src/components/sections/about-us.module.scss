@@ -1,6 +1,6 @@
 @mixin box-glow {
   // todo: improve glow
-  filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.6));
+  filter: drop-shadow(0 0 20px rgba(255, 154, 225, 0.7));
 }
 
 .wrapper {
