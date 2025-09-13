@@ -15,6 +15,75 @@
   border-radius: 16px;
 }
 
+.embla__controlsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.embla__button {
+  background: #a77ae0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s;
+}
+.embla__button:hover {
+  background: #684ad1;
+}
+
+.embla__dots {
+  display: flex;
+  gap: 0.5rem;
+}
+.embla__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d7cbff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.embla__dotActive {
+  background: #684ad1;
+}
+
+@media (max-width: 1024px) {
+  .embla__controlsWrapper {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .embla__button {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .embla__controlsWrapper {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .embla__button {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+  .embla__dot {
+    width: 9px;
+    height: 9px;
+  }
+}
+
 @media (max-width: 1024px) {
   .embla__slide {
     flex: 0 0 70%;
