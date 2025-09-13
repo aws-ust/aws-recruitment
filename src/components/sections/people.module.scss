@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 2rem;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+}
