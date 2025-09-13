@@ -13,7 +13,7 @@
 }
 
 .header {
-  font-size: 72px;
+  font-size: var(--h1-size);
   margin-bottom: 10px;
   pointer-events: none;
   @include mixins.text-glow;
@@ -29,25 +29,7 @@
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: var(--p-size);
   color: var(--white);
   max-width: 900px;
-}
-
-@media (max-width: 1024px) {
-  .header {
-    font-size: 64px;
-  }
-  .subtitle {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    font-size: 48px;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
 }

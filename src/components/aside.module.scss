@@ -28,7 +28,7 @@
 }
 
 .title {
-  font-size: 72px;
+  font-size: var(--h2-size);
   @include mixins.text-glow;
 }
 .subtitle {
@@ -36,7 +36,7 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: var(--p-size);
 }
 
 @media (max-width: 900px) {
