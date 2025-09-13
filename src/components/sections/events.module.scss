@@ -32,7 +32,7 @@ $gap: 1rem;
   max-width: 700px;
   margin: 0 auto;
 }
-.eventsGrid {
+.eventsWrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -40,6 +40,7 @@ $gap: 1rem;
   max-width: calc(var(--max-page-width) - 200px);
   gap: $gap;
   margin: 3rem 0;
+  padding: 0 2rem;
 }
 
 .buttonWrapper {

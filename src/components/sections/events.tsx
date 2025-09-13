@@ -11,7 +11,7 @@ export const EventsSection: React.FC = () => (
       title="Events"
       subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
     />
-    <div className={styles.eventsGrid}>
+    <div className={styles.eventsWrapper}>
       {eventsData.map((event, idx) => (
         <EventCard
           key={event.title + idx}
