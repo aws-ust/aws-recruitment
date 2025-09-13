@@ -98,42 +98,85 @@ export const eventsData: EventType[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
   },
   {
     title: "Meow meow",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
   },
   {
     title: "Meow meow",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
   },
   {
     title: "Meow meow",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
   },
   {
     title: "Meow meow",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
   },
   {
     title: "Meow meow",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
     image: "/aws-mascot.png",
-    link: "/"
+    link: "/",
+  },
+  // Repeat 6 more
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
+  },
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
+  },
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
+  },
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
+  },
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
+  },
+  {
+    title: "Meow meow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
+    image: "/aws-mascot.png",
+    link: "/",
   },
 ];
 
