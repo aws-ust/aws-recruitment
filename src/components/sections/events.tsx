@@ -18,11 +18,12 @@ export const EventsSection: React.FC = () => (
           title={event.title}
           image={event.image}
           description={event.description}
+          link={event.link}
         />
       ))}
     </div>
     <div className={styles.buttonWrapper}>
-      <Button text="Load More" onClick={() => {}} />
+      <Button text="Load More" onClick={() => { }} />
     </div>
   </section>
 );

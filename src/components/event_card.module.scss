@@ -2,14 +2,18 @@
   background: var(--purple-200);
   border-radius: 20px;
   overflow: hidden;
-  max-width: calc(
-    (100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) /
-      var(--event_grid_cols)
-  );
+  max-width: calc((100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) / var(--event_grid_cols));
   width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
 }
 
 .imageWrapper {
