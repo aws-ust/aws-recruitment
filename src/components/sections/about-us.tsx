@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/section_header";
 import { Aside } from "@/components/aside";
 import { RocketDiv } from "@/components/rocket_div";
 import { LineDivider } from "@/components/line_divider";
+import { Carousel } from "@/components/carousel";
 import Image from "next/image";
 
 export const AboutUs: React.FC = () => (
@@ -12,6 +13,8 @@ export const AboutUs: React.FC = () => (
       title="About Us"
       subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
     />
+
+    <Carousel />
 
     <Aside
       title="MISSION"
