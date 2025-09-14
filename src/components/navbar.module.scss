@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   z-index: 100;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   padding: 1.5rem 0;
   display: flex;
   justify-content: center;
@@ -12,7 +12,9 @@
 }
 
 .scrolled {
-  background-color: var(--purple-500);
+  background-color: rgba(37, 17, 87, 0.673);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(167, 122, 224, 0.3);
 }
 
 .inner {
