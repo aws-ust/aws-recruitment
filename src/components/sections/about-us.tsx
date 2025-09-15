@@ -22,7 +22,9 @@ export const AboutUs: React.FC = () => (
       isTextLeft={false}
     >
       <div className={styles.boxGlow}>
-        <Image src="/arrow.png" alt="Mission" width={400} height={400} />
+        <div className={styles.imageWrapper}>
+          <Image src="/arrow.png" alt="Mission" className={styles.image} fill />
+        </div>
       </div>
     </Aside>
 
@@ -32,7 +34,9 @@ export const AboutUs: React.FC = () => (
       isTextLeft={true}
     >
       <div className={styles.boxGlow}>
-        <Image src="/bulb.png" alt="Vision" width={400} height={400} />
+        <div className={styles.imageWrapper}>
+          <Image src="/bulb.png" alt="Vision" className={styles.image} fill />
+        </div>
       </div>
     </Aside>
 
@@ -61,12 +65,14 @@ export const AboutUs: React.FC = () => (
       isTextLeft={true}
     >
       <div className={styles.boxGlow}>
-        <Image
-          src="/aws-mascot.png"
-          alt="ESPI Mascot"
-          width={400}
-          height={400}
-        />
+        <div className={styles.imageWrapper}>
+          <Image
+            src="/aws-mascot.png"
+            alt="ESPI Mascot"
+            className={styles.image}
+            fill
+          />
+        </div>
       </div>
     </Aside>
 
