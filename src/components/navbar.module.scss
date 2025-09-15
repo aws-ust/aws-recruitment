@@ -100,13 +100,12 @@ $navbar-backdrop-filter: blur(25px);
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
-  @include navbar-base;
-  transform: translateY(80px); /* Position it below the navbar */
+  transform: translateY(80px);
 }
 
 .mobileMenuOpen {
   max-height: 300px;
-  background-color: $navbar-bg;
+  @include navbar-base;
 }
 
 .mobileLinks {
@@ -131,7 +130,7 @@ $navbar-backdrop-filter: blur(25px);
   letter-spacing: 1px;
   padding: 1rem 1.5rem;
   transition: all 0.2s;
-  border-bottom: 1px solid rgba(167, 122, 224, 0.1);
+  text-align: center;
 }
 
 .mobileLinks a:hover {

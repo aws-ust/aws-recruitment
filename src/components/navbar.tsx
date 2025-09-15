@@ -41,7 +41,9 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
       </nav>
 
       <nav
-        className={`${styles.mobileNavbar} ${!atTop ? styles.scrolled : ""}`}
+        className={`${styles.mobileNavbar} ${
+          !atTop || mobileMenuOpen ? styles.scrolled : ""
+        }`}
       >
         <div className={styles.mobileInner}>
           <h1 className={styles.logo}>AWSLC-UST</h1>
