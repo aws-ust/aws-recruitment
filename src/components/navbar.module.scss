@@ -14,7 +14,8 @@ $navbar-backdrop-filter: blur(25px);
   left: 0;
   width: 100vw;
   z-index: 100;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease backdrop-filter 0.3s ease border-bottom
+    0.3s ease;
   padding: 1.5rem 0;
   display: flex;
   justify-content: center;
@@ -142,15 +143,10 @@ $navbar-backdrop-filter: blur(25px);
   border-bottom: none;
 }
 
-@media (max-width: var(--breakpoint-desktop-small)) {
+@media (max-width: 1024px) {
   .navbar {
     display: none;
   }
-}
-
-/* Mobile Navbar styles... */
-
-@media (max-width: var(--breakpoint-desktop-small)) {
   .logo {
     font-size: 1.5rem;
   }
@@ -163,14 +159,14 @@ $navbar-backdrop-filter: blur(25px);
   }
 }
 
-@media (min-width: calc(var(--breakpoint-desktop-small) + 1px)) {
+@media (min-width: 1025px) {
   .mobileMenu {
     display: none;
   }
 }
 
-@media (min-width: 1025px) {
-  .mobileMenu {
-    display: none;
+@media (max-width: 900px) {
+  .logo {
+    font-size: 1.2rem;
   }
 }

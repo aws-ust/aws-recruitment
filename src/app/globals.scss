@@ -21,11 +21,6 @@
 
   --max-page-width: 1200px;
 
-  /* Breakpoints */
-  --breakpoint-mobile: 600px;
-  --breakpoint-tablet-large: 900px;
-  --breakpoint-desktop-small: 1024px;
-
   /* Font sizes */
   --h1-size: 72px; // main header
   --h2-size: 48px; // headers for sections
@@ -48,20 +43,20 @@ h1 {
   font-family: var(--font-heading);
 }
 
-@media (max-width: var(--breakpoint-desktop-small)) {
+@media (max-width: 1024px) {
   body {
     --h1-size: 64px;
     --p-size: 16px;
   }
 }
 
-@media (max-width: var(--breakpoint-tablet-large)) {
+@media (max-width: 900px) {
   body {
     --event_grid_cols: 2;
   }
 }
 
-@media (max-width: var(--breakpoint-mobile)) {
+@media (max-width: 600px) {
   body {
     --event_grid_cols: 1;
     --h1-size: 48px;
