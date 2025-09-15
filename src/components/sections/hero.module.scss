@@ -4,8 +4,16 @@
   flex-direction: column;
   align-items: center;
   padding: 4rem 2rem 2rem 2rem;
-  min-height: 100vh;
   justify-content: center;
+  margin-top: 92px;
+}
+
+.mainGraphic {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mascotLinksContainer {

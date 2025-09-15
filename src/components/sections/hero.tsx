@@ -7,7 +7,9 @@ import { RocketDiv } from "@/components/rocket_div";
 
 export const Hero: React.FC = () => (
   <section className={styles.wrapper}>
-    <HeroHeader />
+    <div className={styles.mainGraphic}>
+      <HeroHeader />
+    </div>
 
     <SectionHeader
       title="AWS is now in UST!"
