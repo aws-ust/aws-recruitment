@@ -16,7 +16,7 @@ $navbar-backdrop-filter: blur(25px);
   z-index: 100;
   transition: background-color 0.3s ease backdrop-filter 0.3s ease border-bottom
     0.3s ease;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,11 +33,15 @@ $navbar-backdrop-filter: blur(25px);
   align-items: center;
 }
 
-.logo {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  color: var(--white);
-  margin-left: 1rem;
+.logoWrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+  height: 100%;
+  min-height: 60px;
+}
+
+.logoImage {
+  object-fit: contain;
 }
 
 .links {
@@ -59,12 +63,6 @@ $navbar-backdrop-filter: blur(25px);
 
 .links a:hover {
   color: var(--purple-200);
-}
-
-@media (max-width: 1024px) {
-  .navbar {
-    display: none;
-  }
 }
 
 .mobileNavbar {
@@ -146,9 +144,6 @@ $navbar-backdrop-filter: blur(25px);
   .navbar {
     display: none;
   }
-  .logo {
-    font-size: 1.5rem;
-  }
   .mobileNavbar {
     display: flex;
   }
@@ -165,7 +160,8 @@ $navbar-backdrop-filter: blur(25px);
 }
 
 @media (max-width: 900px) {
-  .logo {
-    font-size: 1.2rem;
+  .logoWrapper {
+    height: 30px;
+    width: 85px;
   }
 }

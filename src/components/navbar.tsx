@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
 import { Link } from "@/utils/types";
 import { Squeeze as Hamburger } from "hamburger-react";
+import Image from "next/image";
 
 interface NavbarProps {
   links: Link[];
@@ -29,7 +30,14 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
     <>
       <nav className={`${styles.navbar} ${!atTop ? styles.scrolled : ""}`}>
         <div className={styles.inner}>
-          <h1 className={styles.logo}>AWSLC-UST</h1>
+          <div className={styles.logoWrapper}>
+            <Image
+              src="/aws_logo.png"
+              alt="AWS Learning Club UST"
+              fill
+              className={styles.logoImage}
+            />
+          </div>
           <ul className={styles.links}>
             {links.map((l) => (
               <li key={l.name}>
@@ -46,7 +54,14 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         }`}
       >
         <div className={styles.mobileInner}>
-          <h1 className={styles.logo}>AWSLC-UST</h1>
+          <div className={styles.logoWrapper}>
+            <Image
+              src="/aws_logo.png"
+              alt="AWS Learning Club UST"
+              fill
+              className={styles.logoImage}
+            />
+          </div>
           <div className={styles.hamburgerWrapper}>
             <Hamburger
               toggled={mobileMenuOpen}
