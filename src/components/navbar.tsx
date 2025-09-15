@@ -27,7 +27,6 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
 
   return (
     <>
-      {/* Desktop Navbar */}
       <nav className={`${styles.navbar} ${!atTop ? styles.scrolled : ""}`}>
         <div className={styles.inner}>
           <h1 className={styles.logo}>AWSLC-UST</h1>
@@ -41,7 +40,6 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         </div>
       </nav>
 
-      {/* Mobile Navbar */}
       <nav
         className={`${styles.mobileNavbar} ${!atTop ? styles.scrolled : ""}`}
       >
@@ -58,7 +56,6 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         </div>
       </nav>
 
-      {/* Mobile Menu Dropdown - Outside navbar */}
       <div
         className={`${styles.mobileMenu} ${
           mobileMenuOpen ? styles.mobileMenuOpen : ""

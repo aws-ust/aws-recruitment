@@ -1,3 +1,13 @@
+$navbar-bg: rgba(19, 2, 61, 0.849);
+$navbar-outline: 1px solid rgba(41, 2, 91, 0.912);
+$navbar-backdrop-filter: blur(25px);
+
+@mixin navbar-base {
+  background-color: $navbar-bg;
+  backdrop-filter: $navbar-backdrop-filter;
+  border-bottom: $navbar-outline;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -12,9 +22,7 @@
 }
 
 .scrolled {
-  background-color: rgba(37, 17, 87, 0.673);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(167, 122, 224, 0.3);
+  @include navbar-base;
 }
 
 .inner {
@@ -58,7 +66,6 @@
   }
 }
 
-/* Mobile Navbar */
 .mobileNavbar {
   position: fixed;
   top: 0;
@@ -92,15 +99,13 @@
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: rgba(37, 17, 87, 0.95);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  @include navbar-base;
   transform: translateY(80px); /* Position it below the navbar */
 }
 
 .mobileMenuOpen {
   max-height: 300px;
-  border-bottom: 1px solid rgba(167, 122, 224, 0.3);
+  background-color: $navbar-bg;
 }
 
 .mobileLinks {
@@ -137,13 +142,30 @@
   border-bottom: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: var(--breakpoint-desktop-small)) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Mobile Navbar styles... */
+
+@media (max-width: var(--breakpoint-desktop-small)) {
+  .logo {
+    font-size: 1.5rem;
+  }
   .mobileNavbar {
     display: flex;
   }
 
   .mobileMenu {
     display: block;
+  }
+}
+
+@media (min-width: calc(var(--breakpoint-desktop-small) + 1px)) {
+  .mobileMenu {
+    display: none;
   }
 }
 
