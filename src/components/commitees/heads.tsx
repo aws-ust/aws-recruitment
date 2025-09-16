@@ -13,6 +13,7 @@ export const Heads: React.FC<{ members: MemberType[] }> = ({ members }) => {
     else setExpandedIndex(index);
   };
 
+  const colors = [styles.pink, styles.green, styles.orange, styles.purple];
   return (
     <>
       <LineHeader text="Committee Heads" />
@@ -23,7 +24,7 @@ export const Heads: React.FC<{ members: MemberType[] }> = ({ members }) => {
               key={index}
               className={`${styles.member} ${
                 expandedIndex === index ? styles.expanded : ""
-              }`}
+              } ${colors[index % colors.length]}`}
               onClick={() => handleMemberClick(index)}
             >
               {expandedIndex === index && (

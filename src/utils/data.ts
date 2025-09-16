@@ -4,7 +4,7 @@ export const executiveBoardData: MemberType[] = [
   {
     name: "Josh Kenn Viray",
     position: "Chief Executive Officer",
-    image: "/eb/CEO-Josh-Kenn-Viray.webp",
+    image: "/eb/ChiefExecutiveOfficer-JoshKennViray.webp",
   },
   {
     name: "Alexa Palanog",
@@ -29,7 +29,7 @@ export const executiveBoardData: MemberType[] = [
   {
     name: "Lance Owen Gulinao",
     position: "Chief Technology Officer",
-    image: "/eb/CTO-Lance-Owen-Gulinao.webp",
+    image: "/eb/ChiefTechnologyOfficer-LanceOwenGulinao.webp",
   },
   {
     name: "Jan Vincent Elleazar",

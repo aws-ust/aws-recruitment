@@ -8,6 +8,22 @@
   }
 }
 
+.pink {
+  background-color: rgb(250, 211, 217);
+}
+
+.green {
+  background-color: rgb(208, 250, 180);
+}
+
+.orange {
+  background-color: rgb(212, 158, 92);
+}
+
+.purple {
+  background-color: rgb(221, 173, 255);
+}
+
 .member {
   height: 350px;
   width: 150px;
@@ -28,7 +44,7 @@
   }
 
   &:hover {
-    border: 2px solid var(--pink-400);
+    border: 2px solid var(--purple-400);
     box-shadow: 0 8px 25px rgba(221, 71, 255, 0.2);
   }
 
