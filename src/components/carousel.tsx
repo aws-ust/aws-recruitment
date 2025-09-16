@@ -1,11 +1,23 @@
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 import styles from "./carousel.module.scss";
 
 export function Carousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4000, stopOnInteraction: false }),
+  ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [slideCount, setSlideCount] = useState(3);
+  const [slideCount, setSlideCount] = useState(5);
+
+  const images = [
+    "/about_us/1.webp",
+    "/about_us/2.webp",
+    "/about_us/3.webp",
+    "/about_us/4.webp",
+    "/about_us/5.webp",
+  ];
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -40,9 +52,18 @@ export function Carousel() {
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
-        <div className={styles.embla__slide}></div>
-        <div className={styles.embla__slide}></div>
-        <div className={styles.embla__slide}></div>
+        {images.map((imageSrc, index) => (
+          <div key={index} className={styles.embla__slide}>
+            <div className={styles.imageWrapper}>
+              <Image
+                src={imageSrc}
+                alt={`About us slide ${index + 1}`}
+                fill
+                className={styles.image}
+              />
+            </div>
+          </div>
+        ))}
       </div>
       <div className={styles.embla__controlsWrapper}>
         <button
