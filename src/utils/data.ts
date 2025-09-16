@@ -22,6 +22,11 @@ export const executiveBoardData: MemberType[] = [
     image: "/eb/ChiefCreativeOfficer-SydneyPadua.webp",
   },
   {
+    name: "Leigh Andrei Sigua",
+    position: "Chief Relations Officer",
+    image: "/eb/ChiefRelationOfficer-LeighSigua.webp",
+  },
+  {
     name: "Denzel To",
     position: "Chief Human Resource Officer",
     image: "/eb/ChiefHumanResourceOfficer-DenzelTo.webp",
