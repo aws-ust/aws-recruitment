@@ -27,6 +27,12 @@
   filter: blur(0.3px);
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    margin-bottom: 50vh;
+  }
+}
+
 @media (max-width: 768px) {
   .topText {
     font-size: 2rem;

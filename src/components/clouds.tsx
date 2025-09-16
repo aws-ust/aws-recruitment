@@ -142,51 +142,6 @@ export const Clouds: React.FC = () => {
       <motion.div
         className={`${styles.cloud} ${styles.cloud10}`}
         animate={{
-          y: [0, -23, 0],
-        }}
-        transition={{
-          duration: 9.3,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.3,
-        }}
-      >
-        <Image src="/pink_clouds/5.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud11}`}
-        animate={{
-          y: [0, -17, 0],
-        }}
-        transition={{
-          duration: 6.8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2.8,
-        }}
-      >
-        <Image src="/pink_clouds/3.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud12}`}
-        animate={{
-          y: [0, -20, 0],
-        }}
-        transition={{
-          duration: 8.2,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1.2,
-        }}
-      >
-        <Image src="/pink_clouds/6.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud13}`}
-        animate={{
           y: [0, -24, 0],
         }}
         transition={{
@@ -197,51 +152,6 @@ export const Clouds: React.FC = () => {
         }}
       >
         <Image src="/pink_clouds/2.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud14}`}
-        animate={{
-          y: [0, -15, 0],
-        }}
-        transition={{
-          duration: 5.8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2.1,
-        }}
-      >
-        <Image src="/pink_clouds/4.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud15}`}
-        animate={{
-          y: [0, -18, 0],
-        }}
-        transition={{
-          duration: 7.1,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1.9,
-        }}
-      >
-        <Image src="/pink_clouds/1.webp" alt="" fill />
-      </motion.div>
-
-      <motion.div
-        className={`${styles.cloud} ${styles.cloud16}`}
-        animate={{
-          y: [0, -22, 0],
-        }}
-        transition={{
-          duration: 9.1,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.1,
-        }}
-      >
-        <Image src="/pink_clouds/5.webp" alt="" fill />
       </motion.div>
     </div>
   );
