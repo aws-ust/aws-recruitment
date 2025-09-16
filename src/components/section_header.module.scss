@@ -17,6 +17,7 @@
   font-size: var(--h1-size);
   margin-bottom: 10px;
   pointer-events: none;
+  filter: blur(0.3px);
   @include mixins.text-glow;
 }
 

@@ -24,6 +24,7 @@
   font-weight: 700;
   line-height: 1;
   @include text-glow;
+  filter: blur(0.3px);
 }
 
 @media (max-width: 768px) {

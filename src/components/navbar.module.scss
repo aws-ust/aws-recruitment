@@ -102,8 +102,8 @@ $navbar-backdrop-filter: blur(25px);
 }
 
 .mobileMenuOpen {
-  max-height: 300px;
   @include navbar-base;
+  max-height: 300px;
 }
 
 .mobileLinks {
