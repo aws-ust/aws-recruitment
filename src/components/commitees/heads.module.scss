@@ -26,7 +26,7 @@
 
 .member {
   height: 350px;
-  width: 150px;
+  width: 180px;
   position: relative;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -134,7 +134,6 @@
 @media (max-width: 480px) {
   .container {
     .members {
-      gap: 12px;
       margin-top: 32px;
     }
   }
