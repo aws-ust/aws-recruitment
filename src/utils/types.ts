@@ -17,7 +17,7 @@ export type EventType = {
   link: string;
 };
 
-export type Link = {
+export type LinkType = {
   name: string;
-  link: string;
+  id: string;
 };

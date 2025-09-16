@@ -1,10 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./footer.module.scss";
-import { Link } from "../utils/types";
+import { Link as ReactScrollLink } from "react-scroll";
+import { LinkType } from "../utils/types";
 
 interface FooterProps {
-  links: Link[];
+  links: LinkType[];
 }
 
 export const Footer: React.FC<FooterProps> = ({ links }) => {
@@ -28,7 +30,16 @@ export const Footer: React.FC<FooterProps> = ({ links }) => {
             <ul>
               {links.map((link) => (
                 <li key={link.name}>
-                  <a href={link.link}>{link.name}</a>
+                  <ReactScrollLink
+                    to={link.id}
+                    smooth={true}
+                    duration={800}
+                    offset={-100}
+                    spy={true}
+                    className={styles.footerLink}
+                  >
+                    {link.name}
+                  </ReactScrollLink>
                 </li>
               ))}
             </ul>

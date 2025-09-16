@@ -7,10 +7,18 @@ import { Hero } from "@/components/sections/hero";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutUs />
-      <People />
-      <EventsSection />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <AboutUs />
+      </div>
+      <div id="people">
+        <People />
+      </div>
+      <div id="events">
+        <EventsSection />
+      </div>
     </>
   );
 }

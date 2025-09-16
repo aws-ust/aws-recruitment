@@ -49,11 +49,21 @@
   color: #fff;
   text-decoration: none;
   font-size: 0.98rem;
-  opacity: 0.9;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
 }
-.sections a:hover {
-  opacity: 1;
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.sections a:hover,
+.footerLink:hover {
+  color: var(--purple-200);
 }
 
 .socials {

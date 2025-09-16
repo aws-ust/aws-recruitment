@@ -17,9 +17,9 @@ export const Hero: React.FC = () => (
     />
 
     <div className={styles.mascotLinksContainer}>
-      <MascotLink title="About" link="/about" image="/aws-mascot.png" />
-      <MascotLink title="Our Team" link="/team" image="/aws-mascot.png" />
-      <MascotLink title="Events" link="/events" image="/aws-mascot.png" />
+      <MascotLink title="About" id="about" image="/aws-mascot.png" />
+      <MascotLink title="The People" id="people" image="/aws-mascot.png" />
+      <MascotLink title="Events" id="events" image="/aws-mascot.png" />
     </div>
 
     <div className={styles.rocketWrapper}>

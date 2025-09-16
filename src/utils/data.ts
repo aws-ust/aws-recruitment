@@ -1,4 +1,4 @@
-import { MemberType, CommitteeType, EventType, Link } from "./types";
+import { MemberType, CommitteeType, EventType, LinkType } from "./types";
 
 export const executiveBoardData: MemberType[] = [
   {
@@ -271,8 +271,8 @@ export const eventsData: EventType[] = [
   },
 ];
 
-export const navLinks: Link[] = [
-  { name: "ABOUT", link: "/about" },
-  { name: "OUR TEAM", link: "/team" },
-  { name: "EVENTS", link: "/events" },
+export const navLinks: LinkType[] = [
+  { name: "ABOUT", id: "about" },
+  { name: "THE PEOPLE", id: "people" },
+  { name: "EVENTS", id: "events" },
 ];

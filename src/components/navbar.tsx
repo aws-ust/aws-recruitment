@@ -2,12 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
-import { Link } from "@/utils/types";
+import { Link as ReactScrollLink } from "react-scroll";
+import { LinkType } from "@/utils/types";
 import { Squeeze as Hamburger } from "hamburger-react";
 import Image from "next/image";
 
 interface NavbarProps {
-  links: Link[];
+  links: LinkType[];
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ links }) => {
@@ -41,7 +42,17 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
           <ul className={styles.links}>
             {links.map((l) => (
               <li key={l.name}>
-                <a href={l.link}>{l.name}</a>
+                <ReactScrollLink
+                  to={l.id}
+                  smooth={true}
+                  duration={800}
+                  offset={-100}
+                  spy={true}
+                  activeClass={styles.active}
+                  className={styles.navLink}
+                >
+                  {l.name}
+                </ReactScrollLink>
               </li>
             ))}
           </ul>
@@ -81,9 +92,18 @@ export const Navbar: React.FC<NavbarProps> = ({ links }) => {
         <ul className={styles.mobileLinks}>
           {links.map((l) => (
             <li key={l.name}>
-              <a href={l.link} onClick={closeMobileMenu}>
+              <ReactScrollLink
+                to={l.id}
+                smooth={true}
+                duration={800}
+                offset={-100}
+                spy={true}
+                activeClass={styles.active}
+                className={styles.navLink}
+                onClick={closeMobileMenu}
+              >
                 {l.name}
-              </a>
+              </ReactScrollLink>
             </li>
           ))}
         </ul>

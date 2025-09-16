@@ -1,20 +1,27 @@
 import styles from "./mascot_link.module.scss";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import React from "react";
 import Image from "next/image";
 
 interface MascotLinkProps {
   title: string;
-  link: string;
+  id: string;
   image: string;
 }
 export const MascotLink: React.FC<MascotLinkProps> = ({
   title,
-  link,
+  id,
   image,
 }: MascotLinkProps) => {
   return (
-    <Link href={link}>
+    <ScrollLink
+      to={id}
+      smooth={true}
+      duration={800}
+      offset={-100}
+      spy={true}
+      className={styles.scrollLink}
+    >
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.imageWrapper}>
@@ -23,6 +30,6 @@ export const MascotLink: React.FC<MascotLinkProps> = ({
           <h1 className={styles.link}>{title}</h1>
         </div>
       </div>
-    </Link>
+    </ScrollLink>
   );
 };
