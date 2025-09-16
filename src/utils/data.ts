@@ -1,14 +1,100 @@
 import { MemberType, CommitteeType, EventType, Link } from "./types";
 
 export const executiveBoardData: MemberType[] = [
-  { name: "Usagi", position: "President", image: "/aws-mascot.png" },
-  { name: "Chiikawa", position: "Vice President", image: "/aws-mascot.png" },
-  { name: "Hachiware", position: "Secretary", image: "/aws-mascot.png" },
-  { name: "Rakko", position: "Treasurer", image: "/aws-mascot.png" },
-  { name: "Usagi", position: "President", image: "/aws-mascot.png" },
-  { name: "Chiikawa", position: "Vice President", image: "/aws-mascot.png" },
-  { name: "Hachiware", position: "Secretary", image: "/aws-mascot.png" },
-  { name: "Rakko", position: "Treasurer", image: "/aws-mascot.png" },
+  {
+    name: "Josh Kenn Viray",
+    position: "Chief Executive Officer",
+    image: "/eb/CEO-Josh-Kenn-Viray.webp",
+  },
+  {
+    name: "Alexa Palanog",
+    position: "Chief Finance Officer",
+    image: "/eb/ChiefFinanceOfficer-AlexaPalanog.webp",
+  },
+  {
+    name: "Marc Axalan",
+    position: "Chief Operating Officer",
+    image: "/eb/ChiefOperatingOfficer-MarcAxalan.webp",
+  },
+  {
+    name: "Sydney Padua",
+    position: "Chief Creative Officer",
+    image: "/eb/ChiefCreativeOfficer-SydneyPadua.webp",
+  },
+  {
+    name: "Denzel To",
+    position: "Chief Human Resource Officer",
+    image: "/eb/ChiefHumanResourceOfficer-DenzelTo.webp",
+  },
+  {
+    name: "Lance Owen Gulinao",
+    position: "Chief Technology Officer",
+    image: "/eb/CTO-Lance-Owen-Gulinao.webp",
+  },
+  {
+    name: "Jan Vincent Elleazar",
+    position: "Corporate Secretary",
+    image: "/eb/CorporateSecretary-JanVincentElleazar.webp",
+  },
+];
+
+export const committeeHeadsData: MemberType[] = [
+  {
+    name: "Raphael Dacayo",
+    position: "Director for Community Development Committee",
+    image: "/heads/DirectorForCommunityDevelopment-RaphaelDacayo.webp",
+  },
+  {
+    name: "Neil Casas",
+    position: "Director for Development Committee",
+    image: "/heads/DirectorForDevelopmentCommittee-NeilCasas.webp",
+  },
+  {
+    name: "Zyro Gonzales",
+    position: "Director for Documentation Committee",
+    image: "/heads/DirectorForDocumentationCommittee-ZyroGonzales.webp",
+  },
+  {
+    name: "John Francis Trinidad",
+    position: "Director for External Affairs Committee",
+    image:
+      "/heads/DirectorForExternalAffairsCommittee-JohnFrancisTrinidad.webp",
+  },
+  {
+    name: "Cristian Gannaban",
+    position: "Director for Finance Committee",
+    image: "/heads/DirectorForFinance-CristianGannaban.webp",
+  },
+  {
+    name: "Alejandra Juico",
+    position: "Director for Human Resource Committee",
+    image: "/heads/DirectorForHumanResource-AlejandraJuico.webp",
+  },
+  {
+    name: "Claire Abas",
+    position: "Director for Logistics Committee",
+    image: "/heads/DirectorForLogistics-ClaireAbas.webp",
+  },
+  {
+    name: "Sofia Panganiban",
+    position: "Director for Marketing Committee",
+    image: "/heads/DirectorForMarketing-SofiaPanganiban.webp",
+  },
+  {
+    name: "Edrine Esguerra",
+    position: "Director for Media Committee",
+    image: "/heads/DirectorForMediaCommitte-EdrineEsguerra.webp",
+  },
+  {
+    name: "Vince Delos Santos",
+    position: "Director for Publicity Committee",
+    image: "/heads/DirectorForPublicity-VinceDelosSantos.webp",
+  },
+  {
+    name: "Christian Dwayne Manuel",
+    position: "Director for Secretariat Committee",
+    image: "/heads/DirectorForSecretariatCommittee-ChristianDwayneManuel.webp",
+  },
 ];
 
 export const committeesData: CommitteeType[] = [

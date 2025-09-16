@@ -12,7 +12,9 @@ export const LineHeader: React.FC<LineHeaderProps> = ({
 }) => (
   <div className={styles.wrapper}>
     {!isLeft && <div className={styles.line} />}
-    <span className={isLeft ? styles.left : styles.right}>{text}</span>
+    <span className={isLeft ? styles.left : styles.right}>
+      {text.toUpperCase()}
+    </span>
     {isLeft && <div className={styles.line} />}
   </div>
 );

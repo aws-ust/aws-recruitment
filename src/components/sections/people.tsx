@@ -3,8 +3,13 @@ import styles from "./people.module.scss";
 import { SectionHeader } from "@/components/section_header";
 import { Committees } from "@/components/commitees/committees";
 import { ExecutiveBoard } from "@/components/eb/executive_board";
+import { Heads } from "@/components/commitees/heads";
 import { LineDivider } from "@/components/line_divider";
-import { committeesData, executiveBoardData } from "@/utils/data";
+import {
+  committeesData,
+  executiveBoardData,
+  committeeHeadsData,
+} from "@/utils/data";
 
 export const People: React.FC = () => (
   <section className={styles.wrapper}>
@@ -15,6 +20,7 @@ export const People: React.FC = () => (
     <div className={styles.content}>
       <Committees committees={committeesData} />
       <ExecutiveBoard members={executiveBoardData} />
+      <Heads members={committeeHeadsData} />
     </div>
     <LineDivider />
   </section>
