@@ -3,7 +3,6 @@ import styles from "./about-us.module.scss";
 import { SectionHeader } from "@/components/section_header";
 import { Aside } from "@/components/aside";
 import { RocketDiv } from "@/components/rocket_div";
-import { LineDivider } from "@/components/line_divider";
 import { Carousel } from "@/components/carousel";
 import Image from "next/image";
 
@@ -75,7 +74,5 @@ export const AboutUs: React.FC = () => (
         </div>
       </div>
     </Aside>
-
-    <LineDivider />
   </section>
 );

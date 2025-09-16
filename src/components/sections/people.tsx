@@ -4,7 +4,6 @@ import { SectionHeader } from "@/components/section_header";
 import { Committees } from "@/components/commitees/committees";
 import { ExecutiveBoard } from "@/components/eb/executive_board";
 import { Heads } from "@/components/commitees/heads";
-import { LineDivider } from "@/components/line_divider";
 import {
   committeesData,
   executiveBoardData,
@@ -22,6 +21,5 @@ export const People: React.FC = () => (
       <ExecutiveBoard members={executiveBoardData} />
       <Heads members={committeeHeadsData} />
     </div>
-    <LineDivider />
   </section>
 );
