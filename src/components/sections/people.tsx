@@ -15,7 +15,7 @@ export const People: React.FC = () => (
   <section className={styles.wrapper}>
     <SectionHeader
       title="The People"
-      subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
+      subtitle="The Executive Board and Committee Heads of UST-AWS Learning Club are a pioneering team of student leaders, committed to fostering innovation and building strong networks within the CICS community, while empowering their skills and knowledge to thrive in cloud technology and beyond."
     />
     <div className={styles.content}>
       <Committees committees={committeesData} />

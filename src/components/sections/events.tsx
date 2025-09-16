@@ -19,7 +19,7 @@ export const EventsSection: React.FC = () => {
     <section className={styles.section}>
       <SectionHeader
         title="Events"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
+        subtitle="Discover the highlights that shape our journey!"
       />
       <div className={styles.eventsWrapper}>
         {eventsData.slice(0, visibleCount).map((event, idx) => (

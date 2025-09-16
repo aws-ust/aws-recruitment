@@ -16,13 +16,9 @@ export const CommitteeBox: React.FC<CommitteeBoxProps> = ({
   index,
 }) => (
   <div className={index % 2 !== 0 ? styles.odd : styles.even}>
-    <Image
-      src={image}
-      alt={title}
-      className={styles.image}
-      width={80}
-      height={80}
-    />
+    <div className={styles.iconWrapper}>
+      <Image src={image} alt={title} className={styles.image} fill />
+    </div>
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.description}>{description}</p>
   </div>

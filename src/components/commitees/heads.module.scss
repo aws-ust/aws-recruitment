@@ -1,18 +1,19 @@
-/* Container styles */
 .container {
+  width: 100%;
   .members {
     display: flex;
-    max-width: calc(var(--max-page-width) - 200px);
     margin-top: 40px;
-    overflow-x: auto;
+    overflow-x: scroll;
+    width: 100%;
   }
 }
 
 .member {
-  height: 300px;
-  width: 100px;
+  height: 350px;
+  width: 150px;
   position: relative;
   transition: all 0.3s ease;
+  flex-shrink: 0;
   overflow: hidden;
   cursor: pointer;
   border: 2px solid transparent;

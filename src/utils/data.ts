@@ -101,80 +101,80 @@ export const committeesData: CommitteeType[] = [
   {
     title: "Executive (Internal)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Manages the rights and welfare of the organization and its members, the membership process and records, as well as ensuring integrity and accountability within the organization.",
+    image: "/committee_icons/executive.webp",
   },
   {
     title: "External Affairs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Acts as the liaison between the members and the external partners of the organization.",
+    image: "/committee_icons/external affairs.webp",
   },
   {
     title: "Marketing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Develops and implements comprehensive marketing plans and campaigns for events, while managing relationships with partners, sponsors, and publicity.",
+    image: "/committee_icons/marketing.webp",
   },
   {
     title: "Finance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Maintains and facilitates the flow of financial resources for events, and continuously develops initiatives to guarantee sustainable and consistent funding.",
+    image: "/committee_icons/finance.webp",
   },
   {
     title: "Secretariat",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Handles the logistical and administrative matters of the organization, designing feedback mechanisms for the events, meetings, or activities of the organization.",
+    image: "/committee_icons/secretariat.webp",
   },
   {
     title: "Human Resources",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Manages the members within the organization, including their welfare, satisfaction, and involvement in the organization's events, meetings, and activities.",
+    image: "/committee_icons/hr.webp",
   },
   {
     title: "Community Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Plans and coordinates outreach programs with partner communities of the UST SIMBAHAYAN Community Development Office, while promoting social consciousness and involvement among members.",
+    image: "/committee_icons/com dev.webp",
   },
   {
     title: "Logistics",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Serves as the overall manpower of the organization, ensuring equipment and materials are available during events, coordinating with the Facilities Management Office (FMO), and handling venue and equipment reservations.",
+    image: "/committee_icons/logistics.webp",
   },
   {
     title: "Documentation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Documents the projects and activities of the organization for whatever official reason it may be used.",
+    image: "/committee_icons/docu.webp",
   },
   {
     title: "Technicals",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Oversees and operates the technical aspects of every event, meeting, and activity the organization holds.",
+    image: "/committee_icons/dev.webp",
   },
   {
-    title: "Developments",
+    title: "Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Creates and produces online resources for organizational use, and educates members on how to utilize them effectively.",
+    image: "/committee_icons/dev.webp",
   },
   {
     title: "Publications",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Designs graphical advertisements, publications, and promotional materials for the organization's social media accounts.",
+    image: "/committee_icons/publi.webp",
   },
   {
     title: "Media",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante augue, finibus et augue non, finibus rhoncus leo.",
-    image: "/file.svg",
+      "Produces and edits all video and multimedia production for events, meetings, and promotional purposes of the organization.",
+    image: "/committee_icons/media.webp",
   },
 ];
 
@@ -267,7 +267,6 @@ export const eventsData: EventType[] = [
 ];
 
 export const navLinks: Link[] = [
-  { name: "HOME", link: "/" },
   { name: "ABOUT", link: "/about" },
   { name: "OUR TEAM", link: "/team" },
   { name: "EVENTS", link: "/events" },

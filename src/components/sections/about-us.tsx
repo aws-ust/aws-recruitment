@@ -11,7 +11,7 @@ export const AboutUs: React.FC = () => (
   <section className={styles.wrapper}>
     <SectionHeader
       title="About Us"
-      subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra consequat blandit. Maecenas sit amet aliquet dolor, ac feugiat neque. Nullam metus dui, vehicula quis ultrices quis, efficitur a purus."
+      subtitle="We empower students by providing a focused pathway to learn Amazon Web Services, fostering professional development, social impact, and moral formation to prepare for a future in technology."
     />
 
     <Carousel />
@@ -44,7 +44,7 @@ export const AboutUs: React.FC = () => (
 
     <Aside
       title="What we do"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      description="We equip students with in-demand cloud skills through hands-on workshops, expert-led seminars, and a major annual hackathon. We provide a clear roadmap to earn professional AWS certifications, helping them build the tools they need to excel in their tech careers and drive social transformation."
       isTextLeft={false}
     >
       <div className={styles.whatWeDoContent}>
@@ -60,8 +60,8 @@ export const AboutUs: React.FC = () => (
     <RocketDiv isRight />
 
     <Aside
-      title="ESPI"
-      description="Exceptional Student Performance Initiative - Our flagship program designed to recognize and nurture outstanding students in cloud computing. Through mentorship, advanced workshops, and real-world projects, ESPI participants gain invaluable experience and industry connections."
+      title="Meet ESPI"
+      description="Meet Espi! 🌟 The cheerful and cute fairy mascot of UST-AWS Learning Club! With her pink wings and cloud-inspired charm, she aims to soar through the skies with a touch of magic to cloud learning. With Espi, every journey to AWS is fun, bright, and inspiring!"
       isTextLeft={true}
     >
       <div className={styles.boxGlow}>
