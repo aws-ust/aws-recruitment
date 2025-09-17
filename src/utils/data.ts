@@ -161,13 +161,13 @@ export const committeesData: CommitteeType[] = [
     title: "Technicals",
     description:
       "Oversees and operates the technical aspects of every event, meeting, and activity the organization holds.",
-    image: "/committee_icons/dev.webp",
+    image: "/committee_icons/tech.webp",
   },
   {
     title: "Development",
     description:
       "Creates and produces online resources for organizational use, and educates members on how to utilize them effectively.",
-    image: "/committee_icons/dev.webp",
+    image: "/committee_icons/dev.png",
   },
   {
     title: "Publications",

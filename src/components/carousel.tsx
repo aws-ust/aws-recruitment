@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import styles from "./carousel.module.scss";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -71,7 +72,7 @@ export function Carousel() {
           onClick={scrollPrev}
           aria-label="Previous slide"
         >
-          &#8592;
+          <ChevronLeft className={styles.icon} />
         </button>
         <div className={styles.embla__dots}>
           {Array.from({ length: slideCount }).map((_, idx) => (
@@ -92,7 +93,7 @@ export function Carousel() {
           onClick={scrollNext}
           aria-label="Next slide"
         >
-          &#8594;
+          <ChevronRight className={styles.icon} />
         </button>
       </div>
     </div>
