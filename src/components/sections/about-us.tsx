@@ -46,12 +46,14 @@ export const AboutUs: React.FC = () => (
       description="We equip students with in-demand cloud skills through hands-on workshops, expert-led seminars, and a major annual hackathon. We provide a clear roadmap to earn professional AWS certifications, helping them build the tools they need to excel in their tech careers and drive social transformation."
       isTextLeft={false}
     >
-      <div className={styles.whatWeDoContent}>
-        <div className={styles.grid}>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
+      <div className={styles.boxGlow}>
+        <div className={styles.imageWrapper}>
+          <Image
+            src="/cloud-with-pc.png"
+            alt="PC With Cloud"
+            className={styles.image}
+            fill
+          />
         </div>
       </div>
     </Aside>

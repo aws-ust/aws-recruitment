@@ -27,18 +27,18 @@
 }
 
 .iconWrapper {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: 100%;
   background: #ffffff;
   position: relative;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
   object-position: center;
+  padding: 2rem;
 }
 
 .image {
