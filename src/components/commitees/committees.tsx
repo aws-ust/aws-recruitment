@@ -11,7 +11,7 @@ interface CommitteesProps {
 export const Committees: React.FC<CommitteesProps> = ({ committees }) => (
   <div className={styles.wrapper}>
     <LineHeader text="COMMITTEES" />
-    <div className={styles.grid}>
+    <div className={styles.committees}>
       {committees.map((committee, idx) => (
         <CommitteeBox
           key={committee.title + idx}
