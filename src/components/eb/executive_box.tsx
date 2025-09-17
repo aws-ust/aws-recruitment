@@ -18,8 +18,7 @@ export const ExecutiveBoardBox: React.FC<ExecutiveBoxProps> = ({
       <Image
         src={image}
         alt={name}
-        width={120}
-        height={120}
+        fill
         quality={90}
         className={styles.image}
       />

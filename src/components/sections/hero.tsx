@@ -20,7 +20,7 @@ export const Hero: React.FC = () => (
 
     <div className={styles.mascotLinksContainer}>
       <MascotLink title="About" id="about" image="/aws-mascot.png" />
-      <MascotLink title="The People" id="team" image="/aws-mascot.png" />
+      <MascotLink title="The People" id="people" image="/aws-mascot.png" />
       <MascotLink title="Events" id="events" image="/aws-mascot.png" />
     </div>
 
