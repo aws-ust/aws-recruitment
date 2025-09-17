@@ -5,7 +5,7 @@
   height: 60vh;
   width: 100%;
   pointer-events: none;
-  margin-bottom: -8%;
+  margin-bottom: -10vh;
   img {
     filter: brightness(0.5);
     object-fit: contain;
@@ -42,5 +42,21 @@
 @media (max-width: 900px) {
   .bgSpace {
     height: 40vh;
+    margin-bottom: -6vh;
+    img {
+      filter: brightness(0.4) blur(5px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bgSpace {
+    margin-bottom: -4vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .bgSpace {
+    margin-bottom: 0;
   }
 }
