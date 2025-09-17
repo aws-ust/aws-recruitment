@@ -2,7 +2,10 @@
   background: var(--purple-200);
   border-radius: 20px;
   overflow: hidden;
-  max-width: calc((100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) / var(--event_grid_cols));
+  max-width: calc(
+    (100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) /
+      var(--event_grid_cols)
+  );
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,7 +16,6 @@
   &:hover {
     transform: translateY(-5px);
   }
-
 }
 
 .imageWrapper {
@@ -31,7 +33,7 @@
 }
 
 .content {
-  padding: 0.5rem 1.2rem;
+  padding: 1rem 1.2rem;
   background: var(--purple-200);
 }
 
@@ -40,7 +42,7 @@
   font-family: var(--font-body);
   font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   margin-top: -0.1rem;
 }
 

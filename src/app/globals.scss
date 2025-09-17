@@ -47,20 +47,19 @@ h1 {
 @media (max-width: 1024px) {
   body {
     --h1-size: 64px;
-    --p-size: 16px;
+    --p-size: 14px;
   }
 }
 
 @media (max-width: 900px) {
   body {
     --event_grid_cols: 2;
+    --h1-size: 48px;
   }
 }
 
 @media (max-width: 600px) {
   body {
     --event_grid_cols: 1;
-    --h1-size: 48px;
-    --p-size: 14px;
   }
 }

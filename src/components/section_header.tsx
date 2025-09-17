@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import styles from "./section_header.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
-import { style } from "framer-motion/client";
 
 interface SectionHeaderProps {
   title: string;
@@ -16,8 +15,20 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   <div className={styles.bgSpace}>
     <Image src="/bg-space.svg" alt="Background Space" fill aria-hidden="true" />
     <div className={styles.content}>
-      <h1 className={styles.header}>{title}</h1>
-      {subtitle ? <div className={styles.subtitle}>{subtitle}</div> : null}
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut",
+          }}
+        >
+          <h1 className={styles.header}>{title}</h1>
+          {subtitle ? <div className={styles.subtitle}>{subtitle}</div> : null}
+        </motion.div>
+      </AnimatePresence>
     </div>
   </div>
 );

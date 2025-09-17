@@ -185,89 +185,25 @@ export const committeesData: CommitteeType[] = [
 
 export const eventsData: EventType[] = [
   {
-    title: "Meow meow",
+    title: "Online Applications are open now!",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
+      "From September 15 to 26, the headquarters of the AWS Learning Club – UST are wide open for aspiring builders, dreamers, and innovators. Register now! 🌩️",
+    image: "/posts/post1.jpg",
+    link: "https://www.facebook.com/share/p/1aWPgCszAZ/",
   },
   {
-    title: "Meow meow",
+    title: "Welcome to the Cloud Generation of AWS Learning Club - UST! 🌩",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
+      "From vision to reality✨after a year of building, dreaming, and pushing boundaries, we proudly introduced the first-ever cloud organization in the University of Santo Tomas at the CICS Freshmen Orientation 2025. 🟡⚫",
+    image: "/posts/post2.jpg",
+    link: "https://www.facebook.com/share/p/19KoaWWEpf/",
   },
   {
-    title: "Meow meow",
+    title: "AWS Learning Club Storms UST!",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  // Repeat 6 more
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
-  },
-  {
-    title: "Meow meow",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra nisi est, eget bibendum velit mollis ut. Sed ultrices rutrum.",
-    image: "/aws-mascot.png",
-    link: "/",
+      "We didn't expect such an incredible turnout, and your overwhelming support made it unforgettable! 🙌🚀 From the bottom of our hearts, we appreciate every one of you for joining and being part of this growing community! 💻🌥️",
+    image: "/posts/post3.jpg",
+    link: "https://www.facebook.com/share/p/1BJ6jWt92r/",
   },
 ];
 
