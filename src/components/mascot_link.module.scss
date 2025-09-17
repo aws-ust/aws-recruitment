@@ -19,6 +19,25 @@
   color: inherit;
 }
 
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.image {
+  object-fit: cover;
+  filter: brightness(0.6) grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.container:hover .image {
+  filter: brightness(0.8);
+}
+
 .wrapper {
   position: absolute;
   top: 0;
@@ -29,20 +48,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 1.5rem;
   text-align: center;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 1.5rem;
-}
-
-.image {
-  object-fit: contain;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 255, 0.355) 0%,
+    rgba(130, 0, 124, 0.332) 40%,
+    transparent 100%
+  );
 }
 
 .link {
@@ -51,19 +65,13 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
   .container {
     width: 200px;
     height: 250px;
-  }
-
-  .imageWrapper {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
   }
 
   .link {

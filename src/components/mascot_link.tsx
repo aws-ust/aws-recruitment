@@ -23,10 +23,10 @@ export const MascotLink: React.FC<MascotLinkProps> = ({
       className={styles.scrollLink}
     >
       <div className={styles.container}>
+        <div className={styles.imageWrapper}>
+          <Image src={image} className={styles.image} alt={title} fill />
+        </div>
         <div className={styles.wrapper}>
-          <div className={styles.imageWrapper}>
-            <Image src={image} className={styles.image} alt={title} fill />
-          </div>
           <h1 className={styles.link}>{title}</h1>
         </div>
       </div>
