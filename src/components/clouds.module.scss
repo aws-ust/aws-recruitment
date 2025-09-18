@@ -22,9 +22,14 @@
 .cloud img {
   overflow: visible;
   object-fit: cover;
-  width: auto !important;
   min-height: 80vh !important;
   // height: auto !important;
+}
+
+.wai {
+  .cloud img {
+    width: auto !important;
+  }
 }
 
 .cloud1 {
