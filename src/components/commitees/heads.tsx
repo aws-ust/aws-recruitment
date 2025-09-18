@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./heads.module.scss";
 import { useState } from "react";
@@ -22,9 +23,9 @@ export const Heads: React.FC<{ members: MemberType[] }> = ({ members }) => {
           {members.map((member, index) => (
             <div
               key={index}
-              className={`${styles.member} ${
-                expandedIndex === index ? styles.expanded : ""
-              } ${colors[index % colors.length]}`}
+              className={`${styles.member} ${expandedIndex === index ? styles.expanded : ""} ${
+                colors[index % colors.length]
+              }`}
               onClick={() => handleMemberClick(index)}
             >
               {expandedIndex === index && (

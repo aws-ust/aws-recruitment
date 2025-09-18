@@ -15,7 +15,7 @@ export const Hero: React.FC = () => (
 
     <SectionHeader
       title="AWS is now in UST!"
-      subtitle="AWS Learning Club - España, the first and only student-focused, student-led, cloud education organization powered by AWS in España, Manila. We are student-focused, peer-driven user groups for post-secondary level students worldwide."
+      subtitle="AWS Learning Club - UST, the first and only student-focused, student-led, cloud education organization powered by AWS in UST, Manila. We are student-focused, peer-driven user groups for post-secondary level students worldwide."
     />
 
     <div className={styles.mascotLinksContainer}>

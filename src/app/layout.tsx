@@ -17,9 +17,9 @@ const tanHeadline = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AWS Learning Club España",
+  title: "AWS Learning Club - UST",
   description:
-    "Join the first-ever cloud organization at the University of Santo Tomas! AWS Learning Club España empowers students to build, dream, and innovate with Amazon Web Services. Discover cloud computing, develop technical skills, and connect with a community of aspiring builders and innovators.",
+    "Join the first-ever cloud organization at the University of Santo Tomas! AWS Learning Club - UST empowers students to build, dream, and innovate with Amazon Web Services. Discover cloud computing, develop technical skills, and connect with a community of aspiring builders and innovators.",
 };
 
 export default function RootLayout({

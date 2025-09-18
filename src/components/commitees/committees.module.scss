@@ -7,11 +7,29 @@
 }
 
 .committees {
+  margin-top: 1rem;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   width: 100%;
   max-width: var(--max-page-width);
+
+  --gap-size: 2rem;
+  --elements-per-row: 4;
+  gap: var(--gap-size);
+
+  @media (max-width: 1200px) {
+    --elements-per-row: 3;
+    --gap-size: 1rem;
+  }
+
+  @media (max-width: 900px) {
+    --elements-per-row: 2;
+  }
+
+  @media (max-width: 600px) {
+    --elements-per-row: 1;
+  }
 }

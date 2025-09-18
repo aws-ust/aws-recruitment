@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./section_header.module.scss";
@@ -8,10 +9,7 @@ interface SectionHeaderProps {
   subtitle?: string;
 }
 
-export const SectionHeader: React.FC<SectionHeaderProps> = ({
-  title,
-  subtitle,
-}) => (
+export const SectionHeader: React.FC<SectionHeaderProps> = ({ title, subtitle }) => (
   <div className={styles.bgSpace}>
     <Image src="/bg-space.svg" alt="Background Space" fill aria-hidden="true" />
     <div className={styles.content}>

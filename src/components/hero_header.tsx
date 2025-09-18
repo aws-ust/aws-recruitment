@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./hero_header.module.scss";
 import { motion } from "framer-motion";

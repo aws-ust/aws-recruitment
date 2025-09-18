@@ -9,21 +9,10 @@ interface CommitteeBoxProps {
   index: number;
 }
 
-export const CommitteeBox: React.FC<CommitteeBoxProps> = ({
-  title,
-  description,
-  image,
-  index,
-}) => (
-  <div className={index % 2 !== 0 ? styles.odd : styles.even}>
+export const CommitteeBox: React.FC<CommitteeBoxProps> = ({ title, description, image, index }) => (
+  <div className={`${styles.common} ${index % 2 !== 0 ? styles.odd : styles.even}`}>
     <div className={styles.iconWrapper}>
-      <Image
-        src={image}
-        alt={title}
-        className={styles.image}
-        width={40}
-        height={40}
-      />
+      <Image src={image} alt={title} className={styles.image} width={40} height={40} />
     </div>
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.description}>{description}</p>

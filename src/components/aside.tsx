@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./aside.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,13 +11,7 @@ interface AsideProps {
   children: React.ReactNode;
 }
 
-export const Aside: React.FC<AsideProps> = ({
-  title,
-  description,
-  isTextLeft = false,
-  subtitle,
-  children,
-}) => {
+export const Aside: React.FC<AsideProps> = ({ title, description, isTextLeft = false, subtitle, children }) => {
   return (
     <AnimatePresence>
       <motion.div

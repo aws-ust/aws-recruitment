@@ -5,6 +5,7 @@ import { Aside } from "@/components/aside";
 import { RocketDiv } from "@/components/rocket_div";
 import { Carousel } from "@/components/carousel";
 import Image from "next/image";
+import PC from "../../../public/cloud-with-pc.png";
 
 export const AboutUs: React.FC = () => (
   <section className={styles.wrapper}>
@@ -48,12 +49,7 @@ export const AboutUs: React.FC = () => (
     >
       <div className={styles.boxGlow}>
         <div className={styles.imageWrapper}>
-          <Image
-            src="/cloud-with-pc.png"
-            alt="PC With Cloud"
-            className={styles.image}
-            fill
-          />
+          <Image src={PC} alt="PC With Cloud" className={styles.image} fill />
         </div>
       </div>
     </Aside>
@@ -62,17 +58,12 @@ export const AboutUs: React.FC = () => (
 
     <Aside
       title="Meet ESPI"
-      description="Meet Espi! 🌟 The cheerful and cute fairy mascot of UST-AWS Learning Club! With her pink wings and cloud-inspired charm, she aims to soar through the skies with a touch of magic to cloud learning. With Espi, every journey to AWS is fun, bright, and inspiring!"
+      description="Meet Espi! 🌟 The cheerful and cute fairy mascot of AWS Learning Club - UST! With her pink wings and cloud-inspired charm, she aims to soar through the skies with a touch of magic to cloud learning. With Espi, every journey to AWS is fun, bright, and inspiring!"
       isTextLeft={true}
     >
       <div className={styles.boxGlow}>
         <div className={styles.imageWrapper}>
-          <Image
-            src="/aws-mascot.png"
-            alt="ESPI Mascot"
-            className={styles.image}
-            fill
-          />
+          <Image src="/aws-mascot.png" alt="ESPI Mascot" className={styles.image} fill />
         </div>
       </div>
     </Aside>

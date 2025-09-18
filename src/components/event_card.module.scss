@@ -2,10 +2,7 @@
   background: var(--purple-200);
   border-radius: 20px;
   overflow: hidden;
-  max-width: calc(
-    (100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) /
-      var(--event_grid_cols)
-  );
+  max-width: calc((100% - var(--event_grid_gap) * (var(--event_grid_cols) - 1)) / var(--event_grid_cols));
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,6 +26,8 @@
 
 .image {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
   object-fit: cover;
 }
 

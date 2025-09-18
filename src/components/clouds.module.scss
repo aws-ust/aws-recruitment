@@ -14,12 +14,17 @@
   opacity: 0.8;
   min-width: 80%;
   min-height: 130%;
+  width: 100%;
+  min-width: 100vw;
   overflow: visible;
 }
 
 .cloud img {
   overflow: visible;
   object-fit: cover;
+  width: auto !important;
+  min-height: 80vh !important;
+  // height: auto !important;
 }
 
 .cloud1 {
@@ -31,7 +36,7 @@
 }
 
 .cloud3 {
-  right: 40%;
+  right: 120%;
 }
 
 .cloud4 {
@@ -45,7 +50,7 @@
 
 .cloud6 {
   top: 8%;
-  right: 30%;
+  right: 136%;
 }
 
 .cloud7 {

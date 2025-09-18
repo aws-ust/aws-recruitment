@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import styles from "./events.module.scss";
 import { eventsData } from "@/utils/data";
@@ -17,10 +18,7 @@ export const EventsSection: React.FC = () => {
 
   return (
     <section className={styles.section}>
-      <SectionHeader
-        title="Events"
-        subtitle="Discover the highlights that shape our journey!"
-      />
+      <SectionHeader title="Events" subtitle="Discover the highlights that shape our journey!" />
       <div className={styles.eventsWrapper}>
         {eventsData.slice(0, visibleCount).map((event, idx) => (
           <EventCard

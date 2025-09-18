@@ -27,6 +27,12 @@
   --p-size: 18px;
 }
 
+@media screen and (max-width: 900px) {
+  :root {
+    --h2-size: 36px;
+  }
+}
+
 body {
   font-family: var(--font-body);
 }
@@ -36,7 +42,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
   overflow: hidden;
 }
 
