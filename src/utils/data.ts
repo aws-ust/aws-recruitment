@@ -142,13 +142,13 @@ export const committeesData: CommitteeType[] = [
   {
     title: "Community Development",
     description:
-      "Plans and coordinates outreach programs with partner communities of the UST SIMBAHAYAN Community Development Office, while promoting social consciousness and involvement among members.",
+      "Plans outreach programs with partner communities of the UST SIMBAHAYAN Community Development Office, while promoting social consciousness among members.",
     image: "/committee_icons/com dev.webp",
   },
   {
     title: "Logistics",
     description:
-      "Serves as the overall manpower of the organization, ensuring equipment and materials are available during events, coordinating with the Facilities Management Office (FMO), and handling venue and equipment reservations.",
+      "Ensures equipment and materials are available during events, coordinating with the Facilities Management Office (FMO), and handling venue and equipment reservations.",
     image: "/committee_icons/logistics.webp",
   },
   {
