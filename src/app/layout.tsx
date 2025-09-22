@@ -18,6 +18,16 @@ const tanHeadline = localFont({
 
 export const metadata: Metadata = {
   title: "AWS Learning Club - UST",
+  openGraph: {
+    images: [
+      {
+        url: "https://www.aws-ust.org/meta.png",
+        alt: "AWS Learning Club - UST",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
   description:
     "Join the first-ever cloud organization at the University of Santo Tomas! AWS Learning Club - UST empowers students to build, dream, and innovate with Amazon Web Services. Discover cloud computing, develop technical skills, and connect with a community of aspiring builders and innovators.",
 };
